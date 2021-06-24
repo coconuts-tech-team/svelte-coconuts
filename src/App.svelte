@@ -1,11 +1,17 @@
 <script lang="ts">
   import Header from "./lib/Header.svelte";
-  import Card from "./lib/Card.svelte";
+  import Cards from "./lib/Cards.svelte";
+  import { Container } from "sveltestrap";
+  import { Styles } from "sveltestrap";
 </script>
+
+<Styles />
 
 <Header />
 <main>
-  <Card />
+  <Container>
+    <Cards />
+  </Container>
 </main>
 
 <style lang="scss">

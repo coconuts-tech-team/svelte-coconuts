@@ -1,20 +1,10 @@
 <script lang="ts">
-  import swal from "sweetalert";
-
-  const home = () => {
-    swal("Hellow world");
-  };
+  import { Navbar, NavbarBrand } from "sveltestrap";
 </script>
 
-<div class="header">
-  <button on:click={home}> ほーむ </button>
-  aaaa
-</div>
+<Navbar color="warning" class="mb-2">
+  <NavbarBrand href="/">ココナッツテック</NavbarBrand>
+</Navbar>
 
 <style lang="scss">
-  .header {
-    height: 50px;
-    vertical-align: middle;
-    background-color: aqua;
-  }
 </style>

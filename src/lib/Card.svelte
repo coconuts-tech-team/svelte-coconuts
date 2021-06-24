@@ -1,25 +1,24 @@
 <script lang="ts">
+  import { Card, CardTitle, CardHeader, CardBody } from "sveltestrap";
+
+  export let title;
+  export let summary;
 </script>
 
 <div class="card">
-  <div class="card__description">
-    <h4>Title</h4>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam totam
-      saepe provident cum suscipit explicabo architecto earum necessitatibus nam
-      corporis?
-    </p>
-  </div>
+  <Card class="card__description">
+    <CardHeader>
+      <CardTitle>{title}</CardTitle>
+    </CardHeader>
+    <CardBody>
+      {@html summary}
+    </CardBody>
+  </Card>
 </div>
 
 <style lang="scss">
   .card {
-    display: flex;
-    margin: 20px 0;
-    border: 1px solid #ccc;
-  }
-
-  .card__description {
-    margin: 0 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 </style>

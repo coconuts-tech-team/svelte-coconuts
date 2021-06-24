@@ -17,6 +17,9 @@
     "vite": "^2.3.4"
   },
   "dependencies": {
+    "axios": "^0.21.1",
+    "fast-xml-parser": "^3.19.0",
+    "sveltestrap": "^5.2.1",
     "sweetalert": "^2.1.2"
   }
 }
